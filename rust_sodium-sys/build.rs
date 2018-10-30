@@ -18,7 +18,7 @@ use http_req::request;
 use sha2::{Digest, Sha256};
 use std::env;
 use std::fs;
-use std::io::Cursor;
+use std::io::{Cursor, Read};
 use std::path::Path;
 
 const DOWNLOAD_BASE_URL: &'static str = "https://download.libsodium.org/libsodium/releases/";
